@@ -1,5 +1,5 @@
 :root {
-    --branding-color: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+    --branding-color: #f95959;
     --secondary-color: #e3e3e3;
     --heading-font-family: "Lato", sans-serif;
     --default-font-family:"Fira Sans Condensed", sans-serif;
@@ -39,25 +39,26 @@ p {
 }
 
 .hero {
-    background: var(--branding-color);
+    background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
     text-align: center;
     padding: 80px 20px;
 }
 
 
 .content-container {
-    text-align: left;
     padding: 80px 20px;
 }
 
-.content {
+.content h1 {
+    font-size: 64px;
+    line-height: 80px;
+}
+
+.content h2 { 
 
 }
 
-
-.content h1 {
-    font-size: 18px;
-    font-family: var(--default-font-family);
+.content h3 {
 
 }
 
@@ -66,12 +67,26 @@ p {
 
 }
 
+.btn-branding {
+    background: var(--branding-color);
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+  }
+
+.btn-branding:hover {
+    color: white;
+  }
+  
+  
+
 img {
     width: 300px;
     height: 400px;
 }
-
-
 
 
 nav {
@@ -101,3 +116,23 @@ nav {
   nav li.active a {
     color: #f95959;
   }
+
+  footer {
+    margin: 60px 0;
+  }
+
+  footer .social-links a {
+    margin: 0 20px;
+    color: var(--branding-color);
+    background: var(--secondary-color);
+    padding: 10px 14px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 100ms ease-in-out;
+  }
+
+  footer .social-links a:hover {
+    color: var(--secondary-color);
+    background: var(--branding-color);
+  }
+
