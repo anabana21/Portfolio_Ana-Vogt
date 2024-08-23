@@ -18,18 +18,16 @@ h1,h2, h3,h4,h5,h6
 
 
 h1{
-    font-size: 96px;
+    font-size:96px;
     line-height: 1.5;
 }
 
 h2 {
-    font-size: 64px;
-   
+    font-size: 64px;  
 }
 
 h3 {
     font-size: 36px;
-    
 }
 
 p {
@@ -38,50 +36,26 @@ p {
     line-height: 30px ;
 }
 
+.btn-primary {
+    background-color: var(--branding-color) !important;
+    border: #f95959 !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color) !important;
+
+}
+
 .hero {
     background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
     text-align: center;
     padding: 80px 20px;
 }
 
-
-.content-container {
-    padding: 80px 20px;
+.hero2 {
+    background: var(--secondary-color);
+    text-align: left;
 }
-
-.content h1 {
-    font-size: 64px;
-    line-height: 80px;
-}
-
-.content h2 { 
-
-}
-
-.content h3 {
-
-}
-
-.content p {
-    font-size: 14px;
-
-}
-
-.btn-branding {
-    background: var(--branding-color);
-    border-radius: 4px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 15px 30px;
-  }
-
-.btn-branding:hover {
-    color: white;
-  }
-  
-  
 
 img {
     width: 300px;
