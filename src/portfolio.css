@@ -47,7 +47,20 @@ section.projects {
 
 .btn-primary:hover {
     background-color: var(--secondary-color) !important;
+    color: black !important;
+    
 
+}
+
+.btn-secondary {
+  background-color: var(--branding-color) !important;
+  border: #f95959 !important;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-color) !important;
+  color: black !important;
+  
 }
 
 .hero {
@@ -55,8 +68,6 @@ section.projects {
     text-align: center;
     padding: 80px 20px;
 }
-
-
 
 .aboutme {
   margin-top: 20px;}
