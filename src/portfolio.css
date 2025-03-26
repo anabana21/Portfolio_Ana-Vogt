@@ -136,6 +136,10 @@ nav {
   }
 
   .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 100px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -148,22 +152,23 @@ nav {
   }
   
   .error-container .oops {
-    font-size: 1.58em;
+    font-size: 1.8em;
     color: #444;
     margin-bottom: 20px;
+    max-width: 600px;
   }
 
   .error-gif {
     width: 300px;
     max-width: 80%;
-    margin: 30px 0;
+    margin: 40px 0;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 
   .back-home {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 3%;
     padding: 12px 24px;
     background-color: #ff6f61;
     color: #fff;
