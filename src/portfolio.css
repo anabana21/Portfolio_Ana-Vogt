@@ -186,6 +186,8 @@ nav {
     background-color: #e6554e;
   }
 
+  /* === Dark Mode Adjustment ===*/
+  
   body.dark-mode {
     background-color: #121212;
     color: #f1f1f1;
@@ -201,7 +203,20 @@ nav {
     }
 
     .dark-mode .back-home:hover {
-      background-color: #e0e0e0;
+      color: #e0e0e0;
+    }
+
+    .dark-mode nav {
+      background-color: #1e1e1e;
+    }
+    
+    .dark-mode nav a {
+      color: #f1f1f1;
+      transition: color 0.3s ease;
+    }
+    
+    .dark-mode nav a:hover {
+      color: #ff6f61;
     }
 
     #toggle-darkmode {
@@ -237,4 +252,16 @@ nav {
     
     .dark-mode #mode-icon {
       transform: rotate(180deg);
+    }
+
+    .dark-mode .btn-primary {
+      background-color: #f1f1f1;
+      color: #121212;
+      border: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .dark-mode .btn-primary:hover {
+      background-color: #e0e0e0;
+      color: #121212;
     }
