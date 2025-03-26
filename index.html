@@ -31,7 +31,7 @@
 ></script>
 <script src="https://kit.fontawesome.com/fde16303f6.js" crossorigin="anonymous"></script>
 </head>
-<header><button id="toggle-darkmode">🌑Toggle Dark Mode</button></header>
+<header><button id="toggle-darkmode" aria-label="Toggle Dark Mode"><span id="mode-icon">🌑</span></button></header>
 <body>
 <div class="container">
 
@@ -126,7 +126,19 @@
         This project was coded with 💜 by <a href="https://github.com/anabana21" target="_blank">Ana Vogt</a>, it's <a href="https://github.com/anabana21/Portfolio_Ana-Vogt" target="_blank">open-sourced</a> and hosted by <a href="https://anavogt.com" target="_blank">netlify.</a> 
       </p>  
 </footer>
-<script> 
-  var toggleButton =  </script>
+<script>
+const button = document.getElementById("toggle-darkmode");
+const icon = document.getElementById("mode-icon");
+
+button.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    icon.textContent = "☀️";
+  } else {
+    icon.textContent = "🌙";
+  }
+});
+</script>
 </body>
 </html>
