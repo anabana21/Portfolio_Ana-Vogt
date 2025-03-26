@@ -181,3 +181,21 @@ nav {
   .back-home:hover {
     background-color: #e6554e;
   }
+
+  body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+    }
+
+    .dark-mode a {
+      color: #ff6f61;
+    }
+
+    .darm-mode .back-home {
+      background-color: #f1f1f1;
+      color: #121212;
+    }
+
+    .dark-mode .back-home:hover {
+      background-color: #e0e0e0;
+    }
