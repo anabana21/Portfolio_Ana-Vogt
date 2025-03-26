@@ -265,3 +265,29 @@ nav {
       background-color: #e0e0e0;
       color: #121212;
     }
+
+    .dark-mode .aboutme {
+      background-color: #1e1e1e; /* falls nötig, kannst du es anpassen */
+      color: #f1f1f1;
+    }
+    
+    .dark-mode .aboutme p {
+      color: #e0e0e0;
+    }
+    
+    .dark-mode .aboutme h1 {
+      color: #ff6f61; /* schöner Kontrast für Überschrift */
+    }
+    
+    /* === DARK MODE: Resume Button === */
+    .dark-mode .btn-secondary {
+      background-color: #f1f1f1;
+      color: #121212;
+      border: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .dark-mode .btn-secondary:hover {
+      background-color: #e0e0e0;
+      color: #121212;
+    } 
